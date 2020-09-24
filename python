@@ -1,0 +1,5 @@
+#!/bin/sh
+
+export PYTHONPATH=`tree /usr/local/src -dfi | xargs -I{} echo {}  | tr "\n" ":" echo`
+
+/usr/local/bin/python3.7 $*
